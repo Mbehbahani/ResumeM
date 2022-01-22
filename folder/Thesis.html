@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+
+
+  <!--
+      <script type="text/javascript" src="processing.js"></script>
+    -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thesis </title>
+  <link rel="stylesheet" href="Mystyle.css" />
+  <link rel="shortcut icon" href="../assets/logo.gif" />
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-back-color" style="background-color: orange;"></div>
+      <div class="sidebar-back-image"></div>
+
+      <div class="avatar">
+        <img src="../assets/logo.gif" alt="avatar" />
+      </div>
+
+      <div class="sidebar-section contact-info">
+        <h2> Read more about:</h2>
+        <h2><a href="http://sina.sharif.edu/~niaki/" target="_blank" style="color: blue;"> </br> My supervisor</a></h2>
+        </br>
+        <h2> and</h2>
+        <h2><a href="../assets/Thesis ARTCLE.pdf" target="_blank" style="color: blue;"> </br> previous version of its
+            article (thesis) </a></h2>
+        <div class="items">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <main class="main">
+
+      <header class="name">
+        <a href="../index.html" style="margin-left: 10px;">Home </a>
+        <h1 class="text-xl">Mohammad Behbahani</h1>
+
+      </header>
+
+
+
+      <div class="section-header" style="align-items:flex-start;">
+        <h2>Thesis:</h2>
+        </br>
+        <h3 style="color: darkblue;">An <a style="color: blue;">artificial neural network meta-model</a> to solve
+          semi-expensive <a style="color: blue;">simulation
+            optimization</a> problems: A comparative study</h3>
+        </br>
+      </div>
+
+      <section class="main-section education" style="display: flex; flex-direction: column; align-items: left;">
+
+        <h3>Abstract</h3>
+        <p>Although a considerable number of problems whose analysis depends on a set of
+          complex mathematical relations exist in the literature due to recent developments in the
+          field of decision making, still very simplified and unrealistic assumptions are involved in
+          many. Simulation is one of the most powerful tools to deal with this kind of problems
+          and enjoys being free of any restricting assumptions which may generally be
+          considered in a stochastic system. In addition, simulation optimization techniques are
+          categorized into two broad classes of model-based and meta-model-based methods.
+          In the first class, simulation and optimization component interact with each other
+          causing an increase in simulation times and costs. To cope with this problem, a third
+          component defined as a meta-model that estimates the relationships between the
+          inputs and outputs of the system being simulated comes to the picture in the second
+          class problems. Besides, optimization of semi-expensive simulation optimization
+          problems needs a numerous simulation run in model-based methods. However, as the
+          validation cost increases at a rapid rate in each iteration of the meta-model-based
+          methods, a new method which consists of two phases has been introduced in the
+          literature to solve semi-expensive simulation optimization problems in less
+          computational time. In the first phase, similar to a model-based algorithm, the
+          simulation output is used directly in the optimization stage. In the second phase, the
+          simulation model is changed with a validated meta-model. In this paper, an artificial
+          neural network is employed as the meta-model in order to compare its performance to
+          the ones of the original algorithm that uses a Kriging meta-model in five popular test
+          problems as well as an (s, S) inventory problem.</p>
+        </br>
+        <p> <b>Keywords:</b> Semi-expensive simulation problems; Simulation optimization; Meta-model-based algorithm;
+          Artificial neural network</p>
+        </br>
+
+        <h3>Supervisor:</h3>
+        </br>
+        <p><a href="http://sina.sharif.edu/~niaki/" target="_blank">Seyed Taghi Akhavan Niaki, Ph.D., Distinguished
+            Professor</a></p>
+        </br>
+
+        <h4>- Table 1</h4>
+        </br>
+        <img src="../article/P&C.jpg" width="680">
+        </br>
+
+        <h4>- The flowchart of the ANN semi-meta-model-based algorithm</h4>
+        </br>
+        <img src="../article/Main.jpg" width="680">
+        </br>
+
+
+        <h4></h4>
+
+
+        <div class="item">
+          <div class="image">
+            <img src="../assets/mat.png" alt="job" width="60" />
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="title text-lg">
+                - (s, S) the simulation of inventory model is developed in MATLAB!
+              </h3>
+              <div class="date text-gray">This functions is based on the (s, S) inventory model
+                Biles et al. (2007) (Biles,W. E.,Kleijnen, J. P., van Beers,W.,VanNieuwenhuyse, I. (2007,December)
+                Kriging metamodeling in constrained simulation optimization: An explorative study. Paper presented at
+                the Proceedings of
+                the 39th conference onWinter simulation, Piscataway, NJ, USA.)</div>
+            </div>
+            <div class="downloadlink"> <a href="../assets/invmodel.m" download >Download the code!</a></div>
+    
+            <div class="extra">
+              <span class="label">Input: (the size of "small s", the size of "Big S")</span>
+              <span class="label">Output: totalcost of the simulation</span>
+
+            </div>
+            <p style="margin-left: 10px;">
+              The parameters of this (s, S) inventory control model are as follows: (You can change for your problem)
+              </br> - The holding cost is charged $1 per day per item
+              </br> - The shortage cost is charged $5 per day per item
+              </br> - The simulation period is 4,000 days per replicate
+              </br> - The ordering cost is $32 plus $3 per unit ordered
+              </br> - The order arrival time follows an exponential distribution with a mean of 6 days
+              </br> - The inventory position is reviewed at the end of each day
+              </br> - The customer demand is exponentially distributed with the mean of 90
+              </br> - The number of units demanded per customer is 1.
+            </p>
+
+            </br>
+            <div class="date text-gray">Input and Output Example (Article Results):
+              </br>
+              </br>
+              - input(s,S):[s=741, S=845] --> output(totalcost)=604.58
+              </br>
+              - in code: [Totalcost]=invmodel([741, 845])
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="item">
+          <div class="image">
+            <img src="../assets/blue-error.png" alt="danger" width="60" />
+          </div>
+
+          <div class="content">
+            <div class="row">
+              <h3 class="title text-lg">
+                This simulation model is not a semi-expensive model
+              </br>
+              - In fact the effeciency of the proposed algorithm is shown based on </br>
+              "The nubmer of Simulation Evaluations"
+              </h3>
+              
+            </div>
+            
+            
+
+
+          </div>
+        </div>
+
+
+
+
+        <h4>- download previous version of its article</h4>
+        <a href="../assets/Thesis ARTCLE.pdf" download>download</a>
+
+        </br>
+
+        <h4>- download the main file (Thesis)</h4>
+        <a href="../assets/Thesis.pdf" download>download</a>
+
+      </section>
+
+
+      <footer style="border-top: 1px dotted #fff;">
+        <i class="fa fa-envelope"></i><span style="padding-left: 10px; "><b>Behbahanimd@gmail.com</b></span>
+      </footer>
+
+    </main>
+  </div>
+
+
+
+</body>
+
+
+
+</html>

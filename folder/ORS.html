@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+
+
+  <!--
+      <script type="text/javascript" src="processing.js"></script>
+    -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORS </title>
+  <link rel="stylesheet" href="Mystyle.css" />
+  <link rel="shortcut icon" href="../assets/logo.gif" />
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-back-color" style="background-color: skyblue;"></div>
+      <div class="sidebar-back-image"></div>
+
+      <div class="avatar">
+        <img src="../assets/surgery.png" alt="avatar" />
+      </div>
+
+      <div class="sidebar-section contact-info">
+        <h2> To find out more</h2>
+        <h2><a href="mailto:behbahanimd@gmai.com" style="color: blue;"> </br> Send Email</a></h2>
+        </br>
+        
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <main class="main">
+
+      <header class="name">
+        <a href="../index.html" style="margin-left: 10px;">Home </a>
+        <h1 class="text-xl">Mohammad Behbahani</h1>
+
+      </header>
+
+
+
+      <div class="section-header" style="align-items:flex-start;">
+        <h2>Title:</h2>
+        </br>
+        <h3 style="color: darkblue;"><a >A novel </a><a style="color: blue;"> Mixed-integer linear programming model
+            </a> for Operating room scheduling</h3>
+        </br>
+      </div>
+
+      <section class="main-section education" style="display: flex; flex-direction: column; align-items: left;">
+
+        <h3>Abstract</h3>
+        <p>The operating rooms represent a critical bottleneck in most hospitals and have very high fixed costs.  Determining the sequence of surgeries in operating rooms is a challenging short-term operational decision-making problem. With this in mind, operating rooms and surgeons as the most expensive resources in operation, the objective of this study is assigning the operations to different operating rooms to minimize operating room’s overhead costs and the surgeon’s waiting time. Considering advanced access policy, a mixed linear integer programming model is developed for effective scheduling of patients, which determines daily appointment scheduling of waiting list operations. In addition, analytical insights into the prediction of the operation’s duration, which affects the performance of appointment systems, are presented to take account of its uncertainty. We calculate how many it can reduce the objectives by implementing the proposed model both on simulated data and a real case study to verify and show its performance. The field experiment shows an average surgeon’s waiting time reduction of ~36%, and at the same time, operating room costs reduction of ~52% in the selected days. </p>
+        </br>
+        <p> <b>Keywords:</b> Operating room; Mixed integer programming; Multi-objective optimization; Appointment scheduling</p>
+        </br>
+
+        <p> <b>Co-authors: </b><a class="meta text-dark-gray-code"
+          href="https://www.swansea.ac.uk/staff/som/busman/eskandari-h/" target="_blank">-Dr. Hamidreza
+          Eskandari*</a> ,
+        <a class="meta text-dark-gray-code" href="https://www.uu.nl/medewerkers/MMoazeni" target="_blank">Mehran
+          Moazeni</a></p>
+        
+        </br></br></br>
+
+        <h4>- fig. 1 requesting a surgery </h4>
+        </br>
+        <img style="align-self: center;" src="../assets/requesting a surgery.png" width="500">
+        </br></br></br>
+
+        <h4>-Generating  feasible solutions efficiently: </br> </br></h4>
+          <h5>
+
+            The main challenge in the fitness evaluation of NSGA-II is the concurrency of surgeon's surgery in the different rooms. It is impossible to shift only a surgeon's operating time to prevent this problem because other surgeons operating times and their idle times are changed and the final result of fitness evaluation would not be correct !!! this was a big challenge for us.
+        </br> </br>
+          Dealing with this difficulty, the Following algorithm is developed.
+      </h5>
+        </br>
+        <img style="align-self: center;" src="../assets/alg2.png" width="500">
+        </br></br></br>
+
+
+
+        <h4>-Results of NSGA-II and exact method for generated test problems: </br> </br></h4>
+        <img style="align-self: center;" src="../assets/compare.png" alt="compare" width="680">
+      </br> </br>
+
+        <h4>-surgery schedules for extreme point 1 & 2: </br> </br></h4>
+        <h5>
+
+          Extreme point 1: total waiting time=785(min), idle + overtime costs=12795($)
+      </br> </br>
+      Extreme point 2: total waiting time=1365(min), idle + overtime costs=6585($)
+    </h5>
+      </br>
+      <img style="align-self: center;" src="../assets/schedule.png" width="650">
+      </br> </br></br></br>
+
+      <h4>-Corresponding figure of the above Extreme points : </br> </br></h4>
+      <h5>
+
+        The "Min-Max" method (Belegundu and Chandrupatla, 2019) was used to obtain the best compromise point in the initial solution front and optimal front to calculate the improvement in the response that this algorithm produces.
+  </h5>
+    </br>
+    <img style="align-self: center;" src="../assets/coressponding figure.jpg" width="650">
+    </br></br></br></br>
+
+
+
+       
+
+
+        <div class="item">
+          <div class="image">
+            <img src="../assets/mat.png" alt="job" width="60" />
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="title text-lg">
+                - A special MATLAB code is developed for drawing the Gantt chart of surgery schedules for extreme points and their corresponding figures.
+              </h3>
+              <div class="date text-gray"> Generating the Gantt chart of surgery schedule's solution at the end of the NSGA-II is not simple. </br> 
+              the complete code will be released after publishing the article </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+      </section>
+
+
+      <footer style="border-top: 1px dotted #fff;">
+        <i class="fa fa-envelope"></i><span style="padding-left: 10px; "><b>Behbahanimd@gmail.com</b></span>
+      </footer>
+
+    </main>
+  </div>
+
+
+
+</body>
+
+
+
+</html>

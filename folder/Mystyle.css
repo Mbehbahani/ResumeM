@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('./assets/Vazir.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('./assets/Vazir-Bold.ttf');
+  font-weight: bold;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Vazir, Tahoma, Helvetica, sans-serif;
+  background: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 68rem;
+  margin: 1.5rem auto;
+  display: flex;
+ 
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-lg {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.text-xl {
+  font-size: 3rem;
+  margin-left: 5px;
+}
+
+.text-gray {
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 10px;
+}
+
+.text-dark-gray {
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 5px;
+}
+
+.label {
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 0.84615385rem;
+  margin: 0.25rem 0 0.25rem 0.5rem;
+  padding: 3px 10px;
+}
+
+.label .details {
+  margin-left: 10px;
+  opacity: 0.8;
+  display: inline-block;
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+  position: relative;
+  color: #fff;
+  padding: 1.5em 1.5em 30em;
+  width: 20%;
+  display: inline-block;
+}
+
+.sidebar-back-color {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #8d0013;
+  z-index: -1;
+}
+
+.sidebar-back-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url('./assets/quera.svg') center bottom -22rem / 200% no-repeat;
+  z-index: -1;
+}
+
+.avatar {
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  border-radius: 0.3125em;
+  max-width: 100%;
+  border: 0.25em solid #fff;
+}
+
+.sidebar-section {
+  margin-bottom: 22px;
+}
+
+.sidebar-section .row {
+  margin-bottom: 8px;
+}
+
+.contact-info i {
+  padding-left: 10px;
+}
+
+
+/* ====== Main ====== */
+.main {
+  padding-left: 26px;
+  padding-top: 0px;
+  width: 100%;
+  background-color: rgb(212, 205, 205);
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.name {
+  margin: 1em 1em 2em 0;
+}
+
+.name small {
+  color: #00658d;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.main-section {
+  margin-bottom: 20px;
+}
+
+.main-section .section-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.main-section .section-header h2 {
+  display: inline-block;
+  border-bottom: 2px solid #ccc;
+}
+
+.job-experiences .items,
+.education .items {
+  padding-right: 1rem;
+
+}
+
+.job-experiences .item,
+.education .item {
+  display: flex;
+  margin: 1.5em 0;
+}
+
+
+.downloadlink{
+  color: blue; margin-left: 10PX;
+}
+
+.downloadlink :hover{
+  color: blue; ;
+  border: 1px solid red ;
+}
